@@ -30,7 +30,7 @@
   font-size: 1.8rem;
   letter-spacing: 2px;
   font-weight: 4;
-  color: rgb(67, 67, 67);
+  color: rgb(98, 94, 94);
   transition: text-shadow 0.3s ease;
   
 }
@@ -117,9 +117,9 @@ and nail those technical interviews.*/
 .host-contest-img:hover{
   
   transform: scale(1.2);
-  box-shadow: 0 0 5px rgba(249, 197, 29), 
+  /* box-shadow: 0 0 5px rgba(249, 197, 29), 
   0 0 10px rgba(249, 197, 29),
-  0 0 5px rgba(249, 197, 29);;
+  0 0 5px rgba(249, 197, 29);; */
 }
 
 
@@ -188,9 +188,9 @@ and nail those technical interviews.*/
 {
   
   transform: scale(1.2);
-  box-shadow: 0 0 5px rgba(249, 197, 29), 
+  /* box-shadow: 0 0 5px rgba(249, 197, 29), 
   0 0 10px rgba(249, 197, 29),
-  0 0 5px rgba(249, 197, 29);;
+  0 0 5px rgba(249, 197, 29);; */
 }
 
 #collaborative-coding-txt
@@ -234,9 +234,9 @@ and nail those technical interviews.*/
 .lang-flex-img:hover{
   transform: scale(1.2);
   
-  box-shadow: 0 0 5px rgba(249, 197, 29), 
+  /* box-shadow: 0 0 5px rgba(249, 197, 29), 
   0 0 10px rgba(249, 197, 29),
-  0 0 5px rgba(249, 197, 29);;
+  0 0 5px rgba(249, 197, 29);; */
 }
 
 #lang-flex-txt
@@ -264,83 +264,68 @@ and nail those technical interviews.*/
                0 0 30px rgba(249, 197, 29);
 }
 
-.flex-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center; 
-  justify-content: center; 
-  margin-top: 20px; 
-}
-
-.flex-item-mid {
-  width: 250px; 
-  height: 300px; 
-  margin-bottom: 20px;
-  margin-right: 10px;
-  margin-left: 10px; 
-  background-color: #040404; 
-  border-radius: 10px; 
-  border: 1px solid white;
-  transition: transform 0.3s ease;;
-}
-.flex-item-left {
-  width: 250px; 
-  height: 200px; 
-  margin-bottom: 20px;
-  margin-right: 40px;
-  margin-left: 10px; 
-  background-color: #040404; 
-  border-radius: 10px; 
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-  border: 1px solid white;
-  transition: transform 0.3s ease;;
-}
-.flex-item-right {
-  width: 250px; 
-  height: 200px; 
-  margin-bottom: 20px;
-  margin-right: 10px;
-  margin-left: 40px; 
-  background-color: #040404; 
-  border-radius: 10px; 
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-  border: 1px solid white;
-  transition: transform 0.3s ease;;
-}
-.flex-item-mid:hover{
-  box-shadow: 0 0 5px rgba(249, 197, 29), 
-  0 0 10px rgba(249, 197, 29),
-  0 0 5px rgba(249, 197, 29);;
-  transform: scale(1.1);
-}
-.flex-item-right:hover{
-  box-shadow: 0 0 5px rgba(249, 197, 29), 
-  0 0 10px rgba(249, 197, 29),
-  0 0 5px rgba(249, 197, 29);;
-  transform: scale(1.1);
-}
-.flex-item-left:hover{
-  box-shadow: 0 0 5px rgba(249, 197, 29), 
-  0 0 10px rgba(249, 197, 29),
-  0 0 5px rgba(249, 197, 29);;
-  transform: scale(1.1);
-}
-#upcoming-contest-container
-{
-  display: flex;
-  justify-content: center;
-  /* margin-top: 2px; */
-}
 #upcoming-contest
 {
-  font-size: 2.5rem;
-  color: white;
-  font-weight: 10;
+  display: flex;
   justify-content: center;
-  background-color: rgb(0, 0, 0);
-  margin-bottom: 20px;
-
+  font-size: 2.5rem;
+  background-color: black;
+  color: white;
+  margin-bottom: 50px;
+  margin-top:-80px;
 }
+
+/* Carousel container styles */
+.carousel-container {
+  margin: 80px;
+  position: relative;
+  width: 100%;
+  max-width: 800px; /* Adjust as needed */
+  margin: 0 auto;
+}
+
+.flex-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 40px;
+  margin-left: 40px;
+  width: 50px;
+  height: 100px; /* Adjust as needed */
+  background-color: #000000; /* Example background color */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Example box shadow */
+  transition: transform 0.3s ease;
+}
+.flex-item:hover{
+  transform: scale(1.1);
+}
+
+
+/* Slide styles */
+
+
+/* Navigation button styles */
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.5); /* Example button background color */
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  color: #333; /* Example button color */
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-button:hover {
+  background-color: rgba(255, 255, 255, 0.7); /* Example button hover background color */
+}
+
+/*  */
+
 
 
 

@@ -1,6 +1,9 @@
 
-import React, { useEffect } from "react";
+import React, { useEffect ,useRef} from "react";
 import { Link } from "react-router-dom";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 import coder from "./assets/coder-removebg-preview.png";
 
@@ -9,15 +12,38 @@ import "./explorePage.css";
 import hostcontest from "./assets/ldrbrd2.png";
 import collaborativecoding from "./assets/collab-coder-nobg.png";
 import languageflex from "./assets/lang-flex-img.png";
+import FlexScroll from "../../components/scroll/flexScroll" ;
+import upcomingContestRight from "./assets/right.png";
+import upcomingContestLeft from "./assets/left.png";
+import upcomingContestMid from "./assets/mid.png";
+
 
 
 const ExplorePage = () => {
+  const sliderRef = useRef(null);
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+  };
+
+  const scrollLeft = () => {
+    containerRef.current.slickPrev(); // Adjust scroll amount as needed
+  };
+
+  const scrollRight = () => {
+    containerRef.current.slickNext(); // Adjust scroll amount as needed
+  };
+
   useEffect(() => {
     window.scrollTo(0, document.body.scrollHeight);
   }, []);
   return (
     <div id="explorePage">
       <Navbar />
+      <div>
       <table>
         <tr >
         <div id="explore-hero">
@@ -125,20 +151,44 @@ const ExplorePage = () => {
 
 
       </table>
-      <div id="upcoming-contest-container">
-      <text id="upcoming-contest">Upcoming Contest</text>
       </div>
-      <div className="flex-container">
       
-      <div className="flex-item-left">Container 1</div>
-      <div className="flex-item-mid">Container 2</div>
-      <div className="flex-item-right">Container 3</div>
+      <div id="upcoming-contest">
+         Upcoming Contest</div>
+      
+        
+        
+      <div className="carousel-container">
+        {/* <button className="carousel-button-left" onClick={scrollLeft}>
+          {"<"}
+        </button> */}
+
+        <Slider ref={sliderRef} {...settings}>
+          <div className="flex-item">
+            <img src={upcomingContestLeft} id="img-left" />
+            Container 1
+          </div>
+          <div className="flex-item">
+            <img src={upcomingContestMid} id="img-mid" />
+            Container 2
+          </div>
+          <div className="flex-item">
+            <img src={upcomingContestRight} id="img-right" />
+            Container 3
+          </div>
+          {/* Add more items here */}
+        </Slider>
+
+        {/* <button className="carousel-button-right" onClick={scrollRight}>
+          {">"}
+        </button> */}
       </div>
       
       
     </div>
   );
 };
+
 
 
 
