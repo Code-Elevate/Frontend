@@ -1,6 +1,6 @@
 Frontend of our website CodeElevate
 ### Structure of the Folders & Files in this Repo :
-'''text
+```text
 .
 ├── public/
 ├── src
