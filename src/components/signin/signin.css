@@ -130,4 +130,18 @@
     /* height: auto;  */
     animation: enlargeAnimation 3s infinite;
   }
+
+  .forgot-password-link {
+    color: rgb(255, 255, 255); 
+    text-decoration: underline; 
+    cursor: pointer; 
+    transition: box-shadow 0.3s ease;
+    /* margin-left: 5px;  */
+    font-size: 14px; 
+  }
+  
+  .forgot-password-link:hover {
+    transform: scale(1.1);
+    color:rgba(249, 197, 29); 
+  }
   

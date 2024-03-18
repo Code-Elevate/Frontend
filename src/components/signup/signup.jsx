@@ -36,6 +36,7 @@ const SignUp = () => {
           <h2>Sign Up!</h2>
           <form className="signup-form">
             <input type="text" placeholder="Name" required />
+            <input type="email" id="email" placeholder="Email Address" required/>
             <input type="password" placeholder="Password" required />
             <input type="password" placeholder="Confirm Password" required />
             <Link to={"/"}>

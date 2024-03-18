@@ -42,7 +42,8 @@ const Navbar = () => {
         </li>
         <li id="navSignin">
           <Link to={"/signin"} className="nav-link" id="hostcontest-link">
-            <button id = "host-contest-butn">Host Contest</button>
+            <p>username123</p>
+            {/* <button id = "host-contest-butn">Host Contest</button> */}
           </Link>
         </li>
       </ul>

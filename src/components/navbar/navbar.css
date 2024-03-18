@@ -48,19 +48,19 @@
     align-items: center;
 }
 
-#host-contest-butn {
+/* #host-contest-butn {
     margin: 15px 5px;
     padding: 10px;
-    /* border: 2px solid blue; */
+    
     border-radius: 10px;
     background-color: rgb(255, 240, 182);
     font-size: 14px;
     text-align: center;
     
     
-  }
-  #host-contest-butn:hover{
+  } */
+  /* #host-contest-butn:hover{
     background-color: rgb(255, 218, 69);
   cursor: pointer;
   transform: scale(1.1);
-  }
+  } */

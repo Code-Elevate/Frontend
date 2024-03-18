@@ -63,6 +63,8 @@ const ExplorePage = () => {
             <br/>
             compete with fellow enthusiasts, and elevate your coding prowess.
               </p>
+              
+              <button id="host-contest-btn">Explore</button>
             </div>
             
             </div>
@@ -83,6 +85,7 @@ const ExplorePage = () => {
               <p>
               Join hands with like-minded individuals, brainstorming solutions, refining algorithms, and conquering challenges together. 
               </p>
+              <button id="collaborative-coding-btn">Explore</button>
             </div>
 
           </td>
@@ -122,6 +125,15 @@ const ExplorePage = () => {
 
 
       </table>
+      <div id="upcoming-contest-container">
+      <text id="upcoming-contest">Upcoming Contest</text>
+      </div>
+      <div className="flex-container">
+      
+      <div className="flex-item-left">Container 1</div>
+      <div className="flex-item-mid">Container 2</div>
+      <div className="flex-item-right">Container 3</div>
+      </div>
       
       
     </div>
