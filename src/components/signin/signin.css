@@ -126,7 +126,7 @@
   .image-container img {
     transition: transform is ease;
     margin: 20px;
-    width: 60%; 
+    width: 40%; 
     /* height: auto;  */
     animation: enlargeAnimation 3s infinite;
   }

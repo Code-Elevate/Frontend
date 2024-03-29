@@ -49,14 +49,14 @@ and nail those technical interviews.*/
 }
 #home-text:hover{
   color: white;
-  font-size: 1.9rem;
+  /* font-size: 1.9rem; */
   text-shadow: 0 0 10px rgba(249, 197, 29), 
                0 0 20px rgba(249, 197, 29),
                0 0 30px rgba(249, 197, 29);
 }
 #explore-hero h2:hover{
   color: white;
-  font-size:1.9rem;
+  /* font-size:1.9rem; */
   text-shadow: 0 0 10px rgba(249, 197, 29), 
                0 0 20px rgba(249, 197, 29),
                0 0 30px rgba(249, 197, 29);
@@ -296,6 +296,7 @@ and nail those technical interviews.*/
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Example box shadow */
   transition: transform 0.3s ease;
+  color: #000000;
 }
 .flex-item:hover{
   transform: scale(1.1);

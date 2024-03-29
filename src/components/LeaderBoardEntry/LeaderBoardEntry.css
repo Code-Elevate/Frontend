@@ -1,0 +1,17 @@
+.leader-entry
+{
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.header
+{
+    color: white;
+    display: flex;
+    align-items: center;
+}
+#leaderboard-txt
+{
+    color: white;
+}
+

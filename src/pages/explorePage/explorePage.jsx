@@ -19,6 +19,7 @@ import upcomingContestMid from "./assets/mid.png";
 
 
 
+
 const ExplorePage = () => {
   const sliderRef = useRef(null);
   const settings = {
@@ -30,11 +31,11 @@ const ExplorePage = () => {
   };
 
   const scrollLeft = () => {
-    containerRef.current.slickPrev(); // Adjust scroll amount as needed
+    containerRef.current.slickPrev(); 
   };
 
   const scrollRight = () => {
-    containerRef.current.slickNext(); // Adjust scroll amount as needed
+    containerRef.current.slickNext(); 
   };
 
   useEffect(() => {
@@ -89,8 +90,9 @@ const ExplorePage = () => {
             <br/>
             compete with fellow enthusiasts, and elevate your coding prowess.
               </p>
-              
+              <Link to ={"/ContestHosting"}>
               <button id="host-contest-btn">Explore</button>
+              </Link>
             </div>
             
             </div>
