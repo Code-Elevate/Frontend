@@ -1,7 +1,7 @@
 import React, { useState, useMemo } from "react";
-import leaderboardData from "C:/Users/Riddhi/Desktop/react/Leetcode-Clone-MKP/src/leaderboardData.json";
+import leaderboardData from "../../../leaderboardData.json";
 import "./problems.css";
-import Problem from "./Problem"; // Update import to point to Problem.jsx
+import Problem from "./problem";
 import Pagination from "./pagination";
 
 const Problems = () => {
@@ -34,16 +34,10 @@ const Problems = () => {
       </div>
 
       {currentTableData.map((problem, index) => {
-    const isEven = index % 2 === 0;
-    const bgClass = isEven ? "even" : "odd";
-    return (
-        <Problem
-            problem={problem}
-            key={problem.id} 
-            bgClass={bgClass}
-        />
-    );
-})}
+        const isEven = index % 2 === 0;
+        const bgClass = isEven ? "even" : "odd";
+        return <Problem problem={problem} key={problem.id} bgClass={bgClass} />;
+      })}
 
       <div className="pagination-box">
         <div className="pagination-limit">
