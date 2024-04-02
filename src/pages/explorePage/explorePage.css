@@ -16,6 +16,12 @@
   font-weight: 10;
   /* font-family: Georgia, 'Times New Roman', Times, serif; */
   color: rgb(255, 255, 255);
+  border: none;
+}
+
+#explore-hero h3:hover{
+  border: none;
+  box-shadow: none;
 }
 
 #explore-hero h1 {
@@ -50,9 +56,10 @@ and nail those technical interviews.*/
 #home-text:hover{
   color: white;
   /* font-size: 1.9rem; */
-  text-shadow: 0 0 10px rgba(249, 197, 29), 
-               0 0 20px rgba(249, 197, 29),
-               0 0 30px rgba(249, 197, 29);
+  text-shadow: 0 0 5px rgb(247, 211, 92),
+             0 0 10px rgba(249, 197, 29),
+             0 0 15px rgba(249, 197, 29);
+
 }
 #explore-hero h2:hover{
   color: white;
@@ -326,6 +333,85 @@ and nail those technical interviews.*/
 }
 
 /*  */
+.upcoming-contest-text
+{
+  margin-top:50px;
+  margin-bottom: 20px;;
+  text-align: center;
+}
+.upcoming-contest-row
+{
+    margin-top: 20px;
+    height: auto;
+    width: 100%;
+}
+
+#upcoming-contest {
+  display: flex;
+  padding: 10px 20px;
+  justify-content: center;
+  font-size: 1.1rem;
+  background-color: black;
+  color: white;
+  margin-bottom: 20px; /* Adjust margin-bottom */
+  margin-top: 50px; /* Adjust margin-top */
+}
+
+/* .upcoming-contest-wrapper
+{
+  overflow: y;
+} */
+
+.upcoming-contest-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+}
+#upcoming-contest-table {
+  
+  border-collapse: collapse;
+  
+  
+  width: 100%;
+  width: 100%;
+  
+}
+.upcoming-contest-wrapper
+{
+  display: flex;
+  max-width: 100%;
+  justify-content: center;
+max-height: 300px;
+  overflow-y: auto;
+  overflow-x:hidden;
+  
+}
+
+::-webkit-scrollbar {
+  width: 10px; /* Set the width of the scrollbar */
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; /* Color of the scrollbar handle */
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.5); /* Radius of the scrollbar handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #f0b41b; /* Color of the scrollbar handle on hover */
+}
+
+#upcoming-contest-table th,
+#upcoming-contest-table td {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+
 
 
 

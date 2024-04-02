@@ -1,3 +1,7 @@
+.navbar li.active a {
+    color: orange;
+  }
+  
 #navbar{
     display: flex;
     flex-direction: row;
