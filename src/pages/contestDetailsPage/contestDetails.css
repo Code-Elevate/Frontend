@@ -1,0 +1,10 @@
+.contest-details
+{
+    margin-left: 50px;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    /* align-items: center; */
+    color: white;
+}
+

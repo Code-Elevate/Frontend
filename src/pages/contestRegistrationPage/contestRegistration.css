@@ -1,0 +1,126 @@
+*
+{
+    background-color: black;
+    
+}
+input[type="text"],
+input[type="email"] {
+  color: white;
+}
+.contestRegistrationPage
+{
+    display: flex;
+    
+    flex-direction: column;
+    
+
+}
+tbody
+{
+    margin-left: 20px;
+}
+
+.title
+{
+    margin: 100px;
+    margin-top: 200px;
+    text-align: center;
+    justify-content: center;
+}
+#team-name-input, #member-email-input
+{
+    margin-left: 20px;
+    
+}
+.form-design
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.form-container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* align-items: flex-end; */
+    margin-right: 100px;
+    margin-top: 100px;
+    height: 400px;
+    width: 40%;
+    border-radius: 10px;
+    border: 1px solid rgb(96, 96, 96);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+    
+}
+.form-container:hover
+{
+    /* transform: scale(1.1); */
+    box-shadow: 0 0 5px rgba(249, 197, 29), 
+  0 0 10px rgba(249, 197, 29),
+  0 0 5px rgba(249, 197, 29);;
+}
+
+.team-name,.username,.email
+{
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 30px;
+    width: 50%;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+.add-member-button
+{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.images
+{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+
+@keyframes enlargeAnimation {
+    0% {
+      transform: scale(0.5); /* Initial scale */
+    }
+    50% {
+      transform: scale(.7); /* Enlarged scale */
+    }
+    100% {
+      transform: scale(0.5); /* Back to original scale */
+    }
+  }
+.astronaut-img
+{
+    align-self: flex-end;
+    transform: scale(0.8);
+    animation: enlargeAnimation 3s infinite;
+}
+.badge-img
+{
+    transform: scale(0.5);
+    align-self: flex-start;
+    /* animation: enlargeAnimation 3s infinite; */
+}
+
+.team-name
+{
+    color: white;
+    margin-top: 20px;
+    margin-left:20px;
+    cursor: pointer;
+}
+
+.participants-list h2
+{
+    margin-left: 50px;
+}
+.max-size-reached-msg
+{
+    color: red;
+}
