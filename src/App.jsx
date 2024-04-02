@@ -15,52 +15,6 @@ import ContestDetailsPage from "./pages/contestDetailsPage/contestDetails";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <ExplorePage />,
-  },
-  {
-    path: "/signin",
-    element: <SignInPage />,
-  },
-  {
-    path: "/signup",
-    element: <SignUpPage />,
-  },
-  {
-    path: "/problems",
-    element: <ProblemsListPage />,
-  },
-  {
-    path: "/problem/:id",
-    element: <ProblemPage />,
-  },
-  {
-    path: "/accepted",
-    element: <AcceptedPage />,
-  },
-  {
-    path: "/rejected",
-    element: <RejectedPage />,
-  },
-  {
-    path: "/contestHosting",
-    element: <ContestHosting />,
-  },
-  {
-    path: "/leaderboard/",
-    element: <LeaderBoardPg />,
-  },
-
-  {
-    path: "/profile/",
-    element: <ProfilePage />,
-  },
-]);
-
 function App() {
   return (
     <Router>

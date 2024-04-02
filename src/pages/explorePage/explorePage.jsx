@@ -1,10 +1,10 @@
-import React, { useState,useEffect,useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import coder from "./assets/coder-removebg-preview.png";
-import axios from 'axios';
+import axios from "axios";
 import Navbar from "../../components/navbar/navbar";
 import "./explorePage.css";
 import hostcontest from "./assets/ldrbrd2.png";
@@ -28,15 +28,16 @@ const ExplorePage = () => {
   };
 
   // Data for upcoming contests
- 
 
   useEffect(() => {
     const fetchUpcomingContests = async () => {
       try {
-        const response = await axios.get('https://code-elevate.onrender.com/api/contests');
+        const response = await axios.get(
+          "https://code-elevate.onrender.com/api/contests"
+        );
         setUpcomingContests(response.data.upcoming);
       } catch (error) {
-        console.error('Error fetching upcoming contests:', error);
+        console.error("Error fetching upcoming contests:", error);
       }
     };
 
@@ -46,10 +47,12 @@ const ExplorePage = () => {
   useEffect(() => {
     const fetchRunningContests = async () => {
       try {
-        const response = await axios.get('https://code-elevate.onrender.com/api/contests');
+        const response = await axios.get(
+          "https://code-elevate.onrender.com/api/contests"
+        );
         setRunningContests(response.data.running);
       } catch (error) {
-        console.error('Error fetching upcoming contests:', error);
+        console.error("Error fetching upcoming contests:", error);
       }
     };
 
@@ -58,18 +61,17 @@ const ExplorePage = () => {
   useEffect(() => {
     const fetchPastContests = async () => {
       try {
-        const response = await axios.get('https://code-elevate.onrender.com/api/contests');
+        const response = await axios.get(
+          "https://code-elevate.onrender.com/api/contests"
+        );
         setPastContests(response.data.past);
       } catch (error) {
-        console.error('Error fetching upcoming contests:', error);
+        console.error("Error fetching upcoming contests:", error);
       }
     };
 
     fetchPastContests();
   }, []);
-  
-
-  
 
   const scrollLeft = () => {
     sliderRef.current.slickPrev();
@@ -84,35 +86,30 @@ const ExplorePage = () => {
       <Navbar />
       <div>
         <table>
-        <tr >
-        <div id="explore-hero">
-        <h3>Welcome</h3>
-        {/* <h1>
+          <tr>
+            <div id="explore-hero">
+              <h3>Welcome</h3>
+              {/* <h1>
           <img src={leetLogo} className="leet-logo" />
         </h1> */}
-        <h2>A New Way to Learn</h2>
-        <span id="home-text">
-          Enhance your skills with us
-          
-          and bag those technical interviews.
-        </span>
-        <br />
-        <Link to={"/signup"}>
-          <button id="home-btn">Get Started</button>
-        </Link>
-      </div>
-      <div>
-        <img src={coder} className="coder-img" />
-    
-        
-        {/* <img src={roboImg} className="home-robo" /> */}
-      </div>
-      </tr>
+              <h2>A New Way to Learn</h2>
+              <span id="home-text">
+                Enhance your skills with us and bag those technical interviews.
+              </span>
+              <br />
+              <Link to={"/signup"}>
+                <button id="home-btn">Get Started</button>
+              </Link>
+            </div>
+            <div>
+              <img src={coder} className="coder-img" />
+
+              {/* <img src={roboImg} className="home-robo" /> */}
+            </div>
+          </tr>
 
           <tr>
-            <div id="upcoming-contest">
-              Upcoming Contest
-            </div>
+            <div id="upcoming-contest">Upcoming Contest</div>
             <div className="upcoming-contest-wrapper">
               <table id="upcoming-contest-table">
                 <thead>
@@ -121,7 +118,7 @@ const ExplorePage = () => {
                     <th>Contest Name</th>
                     <th>Description</th>
                     <th>Duration</th>
-                    
+
                     <th>Start Time</th>
                     <th>End Time</th>
                   </tr>
@@ -137,7 +134,7 @@ const ExplorePage = () => {
                       <td>{contest.name}</td>
                       <td>{contest.description}</td>
                       <td>{contest.duration}</td>
-                      
+
                       <td>{contest.startTime}</td>
                       <td>{contest.endTime}</td>
                     </tr>
@@ -147,9 +144,7 @@ const ExplorePage = () => {
             </div>
           </tr>
           <tr>
-            <div id="upcoming-contest">
-              Running Contest
-            </div>
+            <div id="upcoming-contest">Running Contest</div>
             <div className="upcoming-contest-wrapper">
               <table id="upcoming-contest-table">
                 <thead>
@@ -158,7 +153,7 @@ const ExplorePage = () => {
                     <th>Contest Name</th>
                     <th>Description</th>
                     <th>Duration</th>
-                    
+
                     <th>Start Time</th>
                     <th>End Time</th>
                   </tr>
@@ -174,7 +169,7 @@ const ExplorePage = () => {
                       <td>{contest.name}</td>
                       <td>{contest.description}</td>
                       <td>{contest.duration}</td>
-                      
+
                       <td>{contest.startTime}</td>
                       <td>{contest.endTime}</td>
                     </tr>
@@ -184,9 +179,7 @@ const ExplorePage = () => {
             </div>
           </tr>
           <tr>
-            <div id="upcoming-contest">
-              Past Contest
-            </div>
+            <div id="upcoming-contest">Past Contest</div>
             <div className="upcoming-contest-wrapper">
               <table id="upcoming-contest-table">
                 <thead>
@@ -195,7 +188,7 @@ const ExplorePage = () => {
                     <th>Contest Name</th>
                     <th>Description</th>
                     <th>Duration</th>
-                    
+
                     <th>Start Time</th>
                     <th>End Time</th>
                   </tr>
@@ -211,7 +204,7 @@ const ExplorePage = () => {
                       <td>{contest.name}</td>
                       <td>{contest.description}</td>
                       <td>{contest.duration}</td>
-                      
+
                       <td>{contest.startTime}</td>
                       <td>{contest.endTime}</td>
                     </tr>
@@ -220,10 +213,10 @@ const ExplorePage = () => {
               </table>
             </div>
           </tr>
-          <tr class="card1">
+          <tr className="card1">
             <td>
               <div>
-                <img src={hostcontest} className="host-contest-img" />
+                <img src={hostcontest} classNameName="host-contest-img" />
               </div>
             </td>
             <td>
@@ -244,7 +237,7 @@ const ExplorePage = () => {
               </div>
             </td>
           </tr>
-          <tr class="card2">
+          <tr className="card2">
             <td>
               <div id="collaborative-coding-txt">
                 Collaborate Coding Sessions
@@ -268,7 +261,7 @@ const ExplorePage = () => {
               </div>
             </td>
           </tr>
-          <tr class="card3">
+          <tr className="card3">
             <td>
               <div>
                 <img src={languageflex} className="lang-flex-img" />
