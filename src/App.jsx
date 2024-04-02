@@ -8,9 +8,8 @@ import ExplorePage from "./pages/explorePage/explorePage";
 import AcceptedPage from "./components/result/accepted";
 import RejectedPage from "./components/result/rejected";
 import ContestHosting from "./pages/contestHostingPage/ContestHosting";
-import LeaderBoardPg from  "./pages/leaderBoardPg/leaderBoardPg";
+import LeaderBoardPg from "./pages/leaderBoardPg/leaderBoardPg";
 import ProfilePage from "./pages/profilePage/profilePage";
-
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
@@ -32,7 +31,7 @@ const router = createBrowserRouter([
     element: <ProblemsListPage />,
   },
   {
-    path: "/:id",
+    path: "/problem/:id",
     element: <ProblemPage />,
   },
   {
@@ -45,21 +44,17 @@ const router = createBrowserRouter([
   },
   {
     path: "/contestHosting",
-    element: <ContestHosting/>
+    element: <ContestHosting />,
   },
   {
-    path:"/leaderboard/",
-    element : <LeaderBoardPg />
+    path: "/leaderboard/",
+    element: <LeaderBoardPg />,
   },
 
   {
-    path:"/profile/",
-    element: <ProfilePage/>
-  }
-
-
-  
-  
+    path: "/profile/",
+    element: <ProfilePage />,
+  },
 ]);
 
 function App() {
